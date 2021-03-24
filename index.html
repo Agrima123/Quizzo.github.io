@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
+<script src="https://kit.fontawesome.com/ebda3a331f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="navbar">
+  
+  <a class="active" href="#"><i class="fa fa-fw fa-file"></i>Quizzo</a>
+  <a href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="http://jntuhsd.in/uploads/programmes/DigitalSignalProcessingModule_8.pdf"><i class="fa fa-fw fa-search" ></i> Study</a> 
+  
+</div>
+
+
+
+<br><br><br>
+
+<div class = "center">
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="160" >
+
+<p>
+<button type="button " class ="button button1"onclick="light(1)">Light On</button>
+<button type="button " class ="button button2" onclick="light(0)">Light Off</button>
+</p>
+</div>
+<br>
+
+
+<button class ="button button1" onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+<button class="open-button" onclick="openForm()">Open Quiz</button>
+
+<div class="form-popup" id="myForm">
+  <form action="index2.html" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn"  >Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

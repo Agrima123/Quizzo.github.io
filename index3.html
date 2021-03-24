@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+
+<html>
+<style>
+#div1 {
+  font-size:48px;
+}
+
+</style>
+<head>
+
+    <title>Quiz Questions And Answers</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://kit.fontawesome.com/ebda3a331f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+
+    <div id="main" class= "w3-container w3-blue w3-hover-text-white" >
+	 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+     <center><h1><i class="fas fa-file"></i> Overlap Add and Save Method </h1></center></div>
+	 
+	 
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index4.html" >Instructions</a>
+  <a href="http://jntuhsd.in/uploads/programmes/DigitalSignalProcessingModule_8.pdf">Study Material</a>
+  <a href="https://eeweb.engineering.nyu.edu/iselesni/EL713/zoom/overlap.pdf">Learn more</a>
+  <a href="login.html">Login </a>
+  
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+	 <p>
+    <form name="quiz">
+	<div id="div1" class="fa"></div>
+
+<script>
+function hourglass() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf251;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf252;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf253;";
+    }, 2000);
+}
+hourglass();
+setInterval(hourglass, 3000);
+
+</script>
+   
+    <p>
+        <b>Question 1.
+        <br> Overlap add and Overlap save are the two methods for linear FIR filtering a long sequence on a block-by-block basis using DFT.<br></b>
+        <blockquote>
+    <input type="radio" name="q1" value="True ">True <br>
+    <input type="radio" name="q1" value="False ">False<br>
+    <input type="radio" name="q1" value="Cannot be determined">Cannot be determined<br>
+	<input type="radio" name="q1" value="None of the above ">None of the above<br>
+    </blockquote>
+
+<p><b>
+<hr>
+Question 2.
+<br>The first M-1 values of the output sequence in every step of Overlap save method of filtering of long sequence are discarded. <br></b>
+<blockquote>
+ <input type="radio" name="q2" value="True ">True <br>
+    <input type="radio" name="q2" value="False ">False<br>
+    <input type="radio" name="q2" value="Cannot be determined">Cannot be determined<br>
+	<input type="radio" name="q2" value="None of the above ">None of the above<br>
+</blockquote>
+<p><b>
+<hr>
+Question 3.
+<br>Which of the following is true in case of Overlap add method?<br></b>
+<blockquote>
+<input type="radio" name="q3" value="M zeros are appended at last of each data block">M zeros are appended at last of each data block<br>
+<input type="radio" name="q3" value=" M zeros are appended at first of each data block">M zeros are appended at first of each data block<br>
+<input type="radio" name="q3" value="M-1 zeros are appended at last of each data block">M-1 zeros are appended at last of each data block<br>
+<input type="radio" name="q3" value="M-1 zeros are appended at first of each data block">M-1 zeros are appended at first of each data block<br>
+</blockquote>
+<p><b>
+<hr>
+Question 4.
+<br>In Overlap save method of long sequence filtering, how many zeros are appended to the impulse response of the FIR filter?<br></b>
+<blockquote>
+<input type="radio" name="q4" value="L+M">L+M<br>
+<input type="radio" name="q4" value="L">L<br>
+<input type="radio" name="q4" value="L+1">L+1<br>
+<input type="radio" name="q4" value="L-1">L-1<br>
+</blockquote>
+<p><b>
+<hr>
+Question 5.
+<br> The overlap save method is used to calculate<br></b>
+<blockquote>
+<input type="radio" name="q5" value="The discrete convolution between a sampled signal and a finite impulse response (FIR) filter">The discrete convolution between a sampled signal and a finite impulse response (FIR) filter<br>
+<input type="radio" name="q5" value=" The discrete convolution between a sampled signal and an infinite impulse response (IIR) filter"> The discrete convolution between a sampled signal and an infinite impulse response (IIR) filter<br>
+<input type="radio" name="q5" value="The discrete convolution between a very long signal and a finite impulse response (FIR) filter">The discrete convolution between a very long signal and a finite impulse response (FIR) filter<br>
+<input type="radio" name="q5" value="The discrete convolution between a very long signal and a infinite impulse response (IIR) filter">The discrete convolution between a very long signal and a infinite impulse response (IIR) filter<br>
+</blockquote>
+<p><b>
+<hr>
+Question 6.
+<br>The circular convolution of two sequences in time domain is equivalent to<br></b>
+<blockquote>
+<input type="radio" name="q6" value="Multiplication of DFTs of two sequences">Multiplication of DFTs of two sequences<br>
+<input type="radio" name="q6" value="Summation of DFTs of two sequences">Summation of DFTs of two sequences<br>
+<input type="radio" name="q6" value="Difference of DFTs of two sequences">Difference of DFTs of two sequences<br>
+<input type="radio" name="q6" value="Square of multiplication of DFTs of two sequences">Square of multiplication of DFTs of two sequences<br>
+</blockquote>
+<p><b>
+<hr>
+Question 7.
+<br> Overlap-Add Method Deals with principles that<br></b>
+<blockquote>
+<input type="radio" name="q7" value="The linear convolution of a discrete-time signal of length L and a discrete-time signal of length M produces a discrete-time convolved result of length L + M – 1">The linear convolution of a discrete-time signal of length L and a discrete-time signal of length M produces a discrete-time convolved result of length L + M – 1<br>
+<input type="radio" name="q7" value="The linear convolution of a discrete-time signal of length L and a discrete-time signal of length M produces a discrete-time convolved result of length L + M">The linear convolution of a discrete-time signal of length L and a discrete-time signal of length M produces a discrete-time convolved result of length L + M<br>
+<input type="radio" name="q7" value="The linear convolution of a discrete-time signal of length L and a discrete-time signal of length M produces a discrete-time convolved result of length 2L + M – 1">The linear convolution of a discrete-time signal of length L and a discrete-time signal of length M produces a discrete-time convolved result of length 2L + M – 1<br>
+<input type="radio" name="q7" value="The linear convolution of a discrete-time signal of length L and a discrete-time signal of length M produces a discrete-time convolved result of length 2L + 2M – 1">The linear convolution of a discrete-time signal of length L and a discrete-time signal of length M produces a discrete-time convolved result of length 2L + 2M – 1<br>
+</blockquote>
+<p><b>
+<hr>
+Question 8.
+<br>Circular shift of an N point is equivalent to<br></b>
+<blockquote>
+<input type="radio" name="q8" value="Circular shift of its periodic extension and its vice versa">Circular shift of its periodic extension and its vice versa<br>
+<input type="radio" name="q8" value="Linear shift of its periodic extension and its vice versa">Linear shift of its periodic extension and its vice versa<br>
+<input type="radio" name="q8" value=" Circular shift of its aperiodic extension and its vice versa">Circular shift of its aperiodic extension and its vice versa<br>
+<input type="radio" name="q8" value="Linear shift of its aperiodic extension and its vice versa">Linear shift of its aperiodic extension and its vice versa<br>
+</blockquote>
+<p><b>
+<hr>
+Question 9.
+<br>For the given sequence x[n] { 1,2,3,4, 2,1,3,1} find y_1(n) using overlap save method h[n]= {2,1}<br></b>
+<blockquote>
+<input type="radio" name="q9" value="{6,1,9,7}">{6,1,9,7}<br>
+<input type="radio" name="q9" value="{0,0,1,2}">{0,0,1,2}<br>
+<input type="radio" name="q9" value="{2,0,1,3}">{2,0,1,3}<br>
+<input type="radio" name="q9" value="{1,0,1,2}">{1,0,1,2}<br>
+</blockquote>
+<p><b>
+<hr>
+Question 10.
+<br>For the given sequence x[n]= { 3,0,-2,0,2,1, 0,-2,-1,0}  h[n]={2,2,1} find y_1(n) using overlap add method<br></b>
+<blockquote>
+<input type="radio" name="q10" value="{6,1,9,7,1}">{6,1,9,7,1}<br>
+<input type="radio" name="q10" value="{6,6,-9,7,3}">{6,6,-9,7,3}<br>
+<input type="radio" name="q10" value="{6,2,-9,7,-5}">{6,2,-9,-7,5}<br>
+<input type="radio" name="q10" value="{6,6,9-1,-4,-2}">{6,6,9-1,-4,-2}<br>
+</blockquote>
+<p><b>
+<hr>
+Question 11.
+<br>For given sequence x_1(n)= { 1,2,3,4} and  x_2(n)={5,6,7,8} find y_1 using circular convolution<br></b>
+<blockquote>
+<input type="radio" name="q11" value="67">67<br>
+<input type="radio" name="q11" value="69">69<br>
+<input type="radio" name="q11" value="68">68<br>
+<input type="radio" name="q11" value="66">66<br>
+</blockquote>
+<p><b>
+<hr>
+Question 12.
+<br>The convolution of a discrete signal with itself is<br></b>
+<blockquote>
+<input type="radio" name="q12" value="Squaring the signal">Squaring the signal<br>
+<input type="radio" name="q12" value="Doubling the signal">Doubling the signal<br>
+<input type="radio" name="q12" value="Adding two signals">Adding two signals<br>
+<input type="radio" name="q12" value="is not possible">is not possible<br>
+</blockquote>
+<p><b>
+<hr>
+Question 13.
+<br><img src="Add.png" alt="Question"><br></b>
+<br><b>Identify the Algorithm <br></b>
+<blockquote>
+<input type="radio" name="q13" value="Overlap save method">Overlap save method<br>
+<input type="radio" name="q13" value="Overlap add method">Overlap add method<br>
+<input type="radio" name="q13" value="Overlap add & save method">Overlap add & save method<br>
+<input type="radio" name="q13" value="None of the mentioned">None of the mentioned<br>
+</blockquote>
+<p><b>
+<hr>
+Question 14.
+<br><img src="save.png" alt="Question"><br></b>
+<br><b>Identify the Algorithm <br></b>
+<blockquote>
+<input type="radio" name="q14" value="Overlap save method">Overlap save method<br>
+<input type="radio" name="q14" value="Overlap add method">Overlap add method<br>
+<input type="radio" name="q14" value="Overlap add & save method">Overlap add & save method<br>
+<input type="radio" name="q14" value="None of the mentioned">None of the mentioned<br>
+</blockquote>
+<p><b>
+<hr>
+Question 15.
+<br>Overlap Save method is also called as:<br></b>
+<blockquote>
+<input type="radio" name="q15" value="Overlap-Discard">Overlap-Discard<br>
+<input type="radio" name="q15" value="Overlap-Add">Overlap-Add<br>
+<input type="radio" name="q15" value="Overlap-Keep">Overlap-Keep<br>
+<input type="radio" name="q15" value="Overlap-Remove">Overlap-Remove<br>
+</blockquote>
+<p><b>
+Question 16.
+<br>Find the output y(n) of a filter whose impulse response is h(n)={1,1,1} and input signal x(n)={3,-1,0,1,3,2,0,1,2,1}using overlap save method<br></b>
+<blockquote>
+<input type="radio" name="q16" value="{3,2,2,0,9,8,7,6,5,1,2,0}">{3,2,2,0,9,8,7,6,5,1,2,0}<br>
+<input type="radio" name="q16" value="{3,2,2,0,9,8,7,6,5,1,3,1}">{3,2,2,0,9,8,7,6,5,1,3,1}<br>
+<input type="radio" name="q16" value="{3,2,2,0,4,6,5,3,3,4,3,1}">{3,2,2,0,4,6,5,3,3,4,3,1}<br>
+<input type="radio" name="q16" value="{3,2,2,0,4,6,5,3,3,4,3,0}">{3,2,2,0,4,6,5,3,3,4,3,0}<br>
+</blockquote>
+<p><b>
+Question 17.
+<br>Find the output y(n) of a filter whose impulse response is h(n)={1,1,1} and input signal x(n)={3,-1,0,1,3,2,0,1,2,1}using overlap save method<br></b>
+<blockquote>
+<input type="radio" name="q17" value="{3,2,2,0,9,8,7,5,5,0}">{3,2,2,0,9,8,7,5,5,0}<br>
+<input type="radio" name="q17" value="{3,2,2,0,9,8,7,6,5,1}">{3,2,2,0,9,8,7,6,5,1}<br>
+<input type="radio" name="q17" value="{3,2,2,0,4,6,5,3,3,4}">{3,2,2,0,4,6,5,3,3,4}<br>
+<input type="radio" name="q17" value="{3,2,2,0,8,6,6,3,3,4}">{3,2,2,0,8,6,6,3,3,4}<br>
+</blockquote>
+<p><b>
+
+<input type="button" class ="button button1" value="Submit" onClick="getScore(this.form);">
+<input type="reset" class ="button button2 " value="Clear"><p>
+ <center><p class= "div1" >
+Score out of 17= <input type=text size 15 name= "mark"><br>
+Score in percentage = <input type=text size=15 name="percentage"><br>
+</p></center><br>
+
+
+<h1 class="glow1">Congratulations you have completed <i class="fa fa-trophy" aria-hidden="true"></i></h1>
+
+
+</form>
+    <form method="post" name="Form" onsubmit="" action="">
+</form>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="index2.html"  >1</a>
+  <a href="index3.html" class="active" >2</a>
+
+  <a href="#">&raquo;</a>
+ 
+</div>
+<br>
+<br>
+
+<script>
+    var numQues = 17;
+var numChoi = 4;
+var answers = new Array(17);
+    answers[0] = "True";
+    answers[1] = "True";
+    answers[2] = "M-1 zeros are appended at last of each data block";
+	answers[3] = "L-1";
+    answers[4] = "The discrete convolution between a very long signal and a finite impulse response (FIR) filter";
+    answers[5] = "Multiplication of DFTs of two sequences";
+    answers[6] = "The linear convolution of a discrete-time signal of length L and a discrete-time signal of length M produces a discrete-time convolved result of length L + M – 1";
+    answers[7] = "Linear shift of its periodic extension and its vice versa";
+	answers[8] = "{6,1,9,7}";
+	answers[9] = "{6,6,9-1,-4,-2}";
+	answers[10] = "68";
+	answers[11] = "Squaring the signal";
+	answers[12] = "Overlap add method";
+	answers[13] = "Overlap save method";
+	answers[14] = "Overlap-Discard";
+	answers[15] = "{3,2,2,0,4,6,5,3,3,4,3,1}";
+	answers[16] = "{3,2,2,0,4,6,5,3,3,4}";
+	
+	
+      function getScore(form) {
+
+   var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    answered=false; 
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        answered=true;
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+    if (answered ===false){alert("Do answer all the questions") ;return false;}
+  }
+
+  var scoreper = Math.round(score/numQues*100);
+  form.percentage.value = scoreper + "%";
+  form.mark.value=score; 
+}
+</script>
+
+	<script>
+function goBack() {
+  window.history.back()
+}
+</script>
+	<input type="button" class="button button2" value="Back" onclick="goBack()">
+</body>
+</html>
